@@ -33,7 +33,7 @@ export default function Page() {
         }
         fetchData();
         return;
-    }, [])
+    }, [data])
 
     const handleDelete = async () => {
         try {
