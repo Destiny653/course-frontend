@@ -18,7 +18,7 @@ export default function Login() {
             password: password
         }
         try {
-            const response = await fetch(`http://localhost:3000/users/login`, {
+            const response = await fetch(`https://course-backend-2u5r.onrender.com/users/login`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

@@ -26,7 +26,7 @@ export default function Page() {
             level: window.localStorage.getItem('levelId'),
         }
         try {
-            const response = await fetch(`https://fullstackbackend-1-3kv9.onrender.com/api/courses/update/` + id, {
+            const response = await fetch(`https://course-backend-2u5r.onrender.com/api/courses/update/` + id, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json'
@@ -49,22 +49,22 @@ export default function Page() {
 
     return (
         <div className='flex w-full h-[100vh]'>
-            <section className='w-[17%] bg-[#ffffff57]'>
+            <section className='bg-[#ffffff57] w-[17%]'>
                 <Dbtemplate />
             </section>
-            <section className='w-[83%] bg-black text-[#fff] flex flex-col gap-[10px]'>
+            <section className='flex flex-col gap-[10px] bg-black w-[83%] text-[#fff]'>
                 <Dbnavigation />
-                <section className='box-border px-[30px] flex justify-between items-center'>
-                    <h2 className='text-[#2196f3] font-[600] text-[24px]'>Adim Dashboard</h2>
-                    <div className='flex gap-[20px] justify-evenly'>
+                <section className='box-border flex justify-between items-center px-[30px]'>
+                    <h2 className='font-[600] text-[#2196f3] text-[24px]'>Adim Dashboard</h2>
+                    <div className='flex justify-evenly gap-[20px]'>
                         <Link href={'/dashboard/admin'}>
-                            <button className='btn-opt-nav text-[#000] bg-[#fffffff6] px-[20px] py-[6px] rounded-[20px]'>
+                            <button className='bg-[#fffffff6] px-[20px] py-[6px] btn-opt-nav rounded-[20px] text-[#000]'>
                                 <IoMdAdd size={20} />
                                 Add new user
                             </button>
                         </Link>
                         <Link href={'/dashboard/course'}>
-                            <button className='btn-opt-nav text-[#000] bg-[#fffffff6] px-[20px] py-[6px] rounded-[20px]'>
+                            <button className='bg-[#fffffff6] px-[20px] py-[6px] btn-opt-nav rounded-[20px] text-[#000]'>
                                 <IoMdAdd size={20} />
                                 Add new Course
                             </button>
@@ -72,9 +72,9 @@ export default function Page() {
                     </div>
                 </section>
                 <section className='flex justify-center items-center h-[100vh]'>
-                    <div className='flex justify-center items-center relative bg-[#fff] h-[500px] w-[900px] rounded-[15px] box-border py-[30px]'>
-                        <form onSubmit={handleSubmit} className='form-reg flex flex-col justify-center gap-[6%] items-center w-[800px] h-[100%] box-border px-[20px]'>
-                            <h1 className='text-[#2196f3] text-[27px] font-[600] absolute top-[20px] left-[60px]'>Register Course</h1>
+                    <div className='relative box-border flex justify-center items-center bg-[#fff] py-[30px] rounded-[15px] w-[900px] h-[500px]'>
+                        <form onSubmit={handleSubmit} className='box-border flex flex-col justify-center items-center gap-[6%] form-reg px-[20px] w-[800px] h-[100%]'>
+                            <h1 className='top-[20px] left-[60px] absolute font-[600] text-[#2196f3] text-[27px]'>Register Course</h1>
                             <div className='flex justify-center items-center gap-[8%] w-full'>
                                 <label htmlFor="course title">
                                     <span className='text-[#000]'>Title</span>
@@ -85,7 +85,7 @@ export default function Page() {
                                     <input type='datatime' id="duration" name="duration" placeholder="Course duration" value={duration} onChange={(e) => setDuration(e.target.value)} />
                                 </label>
                             </div>
-                            <button type="submit" className='btn-opt absolute right-[70px] bottom-[40px] text-[#fff] bg-[#2196f3] px-[20px] py-[10px] rounded-[7px]'>
+                            <button type="submit" className='right-[70px] bottom-[40px] absolute bg-[#2196f3] px-[20px] py-[10px] rounded-[7px] text-[#fff] btn-opt'>
                                 Submit
                             </button>
                         </form>

@@ -27,7 +27,7 @@ export default function Page() {
         e.preventDefault();  
 
         try {
-            const response = await fetch('http://localhost:3000/levels/post',{ 
+            const response = await fetch('https://course-backend-2u5r.onrender.com/levels/post',{ 
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -45,7 +45,7 @@ export default function Page() {
             try {
                 const levelId = localStorage.getItem('levelId')
                 data.level = levelId
-                const response = await fetch(` http://localhost:3000/users/student`, {
+                const response = await fetch(`https://course-backend-2u5r.onrender.com/users/student`, {
                     method: "POST",
                     headers: {
                         'Content-Type': 'application/json'
@@ -100,7 +100,7 @@ export default function Page() {
                             <section className='bg-[gray] rounded-[15px] w-[50%] h-[300px] overflow-hidden'>
                                 <Image className='w-full h-full' src={'/images/course.jpg'} alt='course management image' width={400} height={400} />
                             </section>
-                            <form onSubmit={handleSubmit} className='box-border flex flex-col justify-center items-center gap-[20px] form-reg px-[20px] w-[40%]' action="http://localhost:3000/api/auth/student" method='post'>
+                            <form onSubmit={handleSubmit} className='box-border flex flex-col justify-center items-center gap-[20px] form-reg px-[20px] w-[40%]' action="https://course-backend-2u5r.onrender.com/api/auth/student" method='post'>
                                 <h1 className='top-[20px] left-[60px] absolute font-[600] text-[#2196f3] text-[27px]'>Student Register</h1>
                                 <label htmlFor="enrollement data">
                                     <span className='text-[#000]'>Enrollement Data</span>

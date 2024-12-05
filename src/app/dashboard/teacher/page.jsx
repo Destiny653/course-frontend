@@ -29,7 +29,7 @@ export default function Page() {
         e.preventDefault(); 
 
         try {
-            const response = await fetch('http://localhost:3000/levels/post',{ 
+            const response = await fetch('https://course-backend-2u5r.onrender.com/levels/post',{ 
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -47,7 +47,7 @@ export default function Page() {
             try {
                 const levelId = localStorage.getItem('levelId')
                 data.level = levelId
-                const response = await fetch(` http://localhost:3000/users/teacher`, {
+                const response = await fetch(`https://course-backend-2u5r.onrender.com/users/teacher`, {
                     method: "POST",
                     headers: {
                         'Content-Type': 'application/json' 

@@ -19,7 +19,7 @@ export default function Page() {
     useEffect(() => {
         const handleSearch = async () => {
             try {
-                const response = await fetch(`http://localhost:3000/users`)
+                const response = await fetch(`https://course-backend-2u5r.onrender.com/users`)
                 const request = await response.json()
                 console.log(response)
                 if (!response.ok) {

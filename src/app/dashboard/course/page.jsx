@@ -31,7 +31,7 @@ export default function Page() {
             level: levelId
         }
         try {
-            const response = await fetch(`http://localhost:3000/courses/create`, {
+            const response = await fetch(`https://course-backend-2u5r.onrender.com/courses/create`, {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -69,7 +69,7 @@ export default function Page() {
         }
 
         try {
-            const response = await fetch(`http://localhost:3000/courses/` + updateId, {
+            const response = await fetch(`https://course-backend-2u5r.onrender.com/courses/` + updateId, {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json'

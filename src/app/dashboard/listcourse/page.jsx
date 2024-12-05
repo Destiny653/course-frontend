@@ -19,7 +19,7 @@ export default function Page() {
 
         const fetchData = async () => {
             try {
-                const response = await fetch(`http://localhost:3000/courses`)
+                const response = await fetch(`https://course-backend-2u5r.onrender.com/courses`)
                 const request = await response.json()
                 if (!response.ok) {
                     alert(request.message)
@@ -37,7 +37,7 @@ export default function Page() {
 
     const handleDelete = async () => {
         try {
-            const response = await fetch(`http://localhost:3000/courses/` + courseId, {
+            const response = await fetch(`https://course-backend-2u5r.onrender.com/courses/` + courseId, {
                 method: 'DELETE'
             })
             const request = await response.json()
