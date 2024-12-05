@@ -1,0 +1,91 @@
+.list-items{
+    box-sizing: border-box; 
+    border: 1px solid gray;
+}
+.list-items ul {
+    display: grid;
+    grid-template-columns: 25% 25% 30% 20% ;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0 6px;           
+    border-bottom: 1px solid gray; 
+    margin: 0; 
+}
+.list-items li{
+    padding: 6px;          
+    list-style: none;
+    border-right: 1px solid gray;
+}
+li:nth-child(4){
+    border: none;
+}
+
+.table-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #333;
+    background-color: #fff;
+    text-align: left;
+}
+
+thead {
+    background-color: #343a40;
+    color: #fff;
+}
+
+thead th {
+    padding: 8px 16px;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 400;
+    border: 1px solid #333;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+    background-color: #e9ecef;
+    cursor: pointer;
+}
+
+tbody td {
+    padding: 8px 16px;
+    font-size: 14px;
+    color: #333;
+    border: 1px solid #333;
+}
+.delete-btn{ 
+    text-align: center;
+}
+.delete-btn:hover{
+    background-color: red;
+    color: #fff;
+}
+.update-btn{ 
+    text-align: center;
+}
+.update-btn:hover{
+    background-color: blue;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    table {
+        font-size: 12px;
+    }
+
+    thead th, tbody td {
+        padding: 8px;
+    }
+}
