@@ -44,9 +44,19 @@ export default function Page() {
                 <Dbtemplate />
             </section>
             <section className='flex flex-col gap-[50px] col-start-auto bg-[#000] w-[80%] text-[#fff]'>
-                <div>
-                    <Dbnavigation />
-                </div>
+                <Dbnavigation />
+                <section className='box-border flex justify-between items-center px-[30px]'>
+                    <h2 className='font-[600] text-[#2196f3] text-[24px]'>Adim Dashboard</h2>
+                    <div className='flex justify-evenly gap-[20px]'>
+                        <Link href={'/dashboard/registeruser'}>
+                            <button className='bg-[#fffffff6] px-[20px] py-[6px] btn-opt-nav rounded-[20px] text-[#000]'>
+                                <IoMdAdd size={20} />
+                                Add new user
+                            </button>
+                        </Link>
+                    </div>
+                </section>
+
                 <table>
                     <thead>
                         <tr>

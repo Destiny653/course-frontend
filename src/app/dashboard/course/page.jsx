@@ -81,6 +81,7 @@ export default function Page() {
             
             if (!response.ok) {
                 alert(request.message)
+                localStorage.removeItem('update')
             }
             alert(request.message)
             localStorage.removeItem('update')

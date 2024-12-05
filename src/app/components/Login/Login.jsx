@@ -70,7 +70,7 @@ export default function Login() {
                                             <span className='text-[#000]'>Password</span>
                                             <input type="password" id="password" name="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} />
                                         </label> 
-                                        <p className='text-[#000]'>Don&#39t have an account?: <Link href="/dashboard/registeruser">Register</Link></p>
+                                        <p className='text-[#000]'>Don`t have an account?: <Link href="/dashboard/registeruser">Register</Link></p>
                                         <button type="submit" className='right-[30px] bottom-[60px] absolute bg-[#2196f3] px-[20px] py-[10px] rounded-[7px] text-[#fff] btn-opt'>
                                             Submit
                                         </button>
@@ -94,13 +94,7 @@ export default function Login() {
                                             <IoMdAdd size={20} />
                                             Add new user
                                         </button>
-                                    </Link>
-                                    <Link href={'/dashboard/course'}>
-                                        <button className='bg-[#fffffff6] px-[20px] py-[6px] btn-opt-nav rounded-[20px] text-[#000]'>
-                                            <IoMdAdd size={20} />
-                                            Add new Course
-                                        </button>
-                                    </Link>
+                                    </Link> 
                                 </div>
                             </section>
                             <section className='box-border flex flex-col justify-center items-center p-[px] w-full h-[100vh]'>
