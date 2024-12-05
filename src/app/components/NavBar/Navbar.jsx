@@ -4,6 +4,7 @@ import { CiShoppingCart } from "react-icons/ci";
 import { CiUser } from "react-icons/ci";
 import { SlHeart } from "react-icons/sl";
 import { VscSearch } from "react-icons/vsc";
+import Link from 'next/link';
 
 export default function Navbar() {
     return (
